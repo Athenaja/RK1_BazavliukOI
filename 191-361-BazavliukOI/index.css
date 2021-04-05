@@ -1,0 +1,42 @@
+p::selection {
+    color: plum;
+}
+
+body {
+    display: grid;
+    width: 100%;
+    grid-template-areas:
+        "head head";
+    grid-template-columns: 1fr 2fr;
+    grid-auto-rows: minmax(100px, auto);
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-area: head;
+    font-size: 16px;
+    font-weight: 300;
+    background-color: #ae00f394;
+    color: rgb(252, 252, 252);
+}
+
+footer {
+    background-color: #ae00f394;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-container__item {
+    padding: 10px;
+} 

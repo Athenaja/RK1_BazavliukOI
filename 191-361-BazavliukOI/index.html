@@ -1,24 +1,94 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css">
     <title>Start</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="gameNameHeader">
-            CosmoStart
-        </div>
-        <div class="authorHeader">
-            Базавлюк Ольга Игревна, 191-361, варинат 2
+      <div class="game-name__header">CosmoStart</div>
+      <div class="author__header">
+        Базавлюк Ольга Игоревна, 191-361, варинат 2
+      </div>
+      <div>
+        <object
+          type="img/logo.svg.png"
+          data="SvgImg.svg"
+          width="150"
+          height="150"
+        >
+          <img src="img/logo.svg.png" width="150" height="150" alt="logo" />
+        </object>
+      </div>
+    </header>
+
+    <div class="container">
+      <form action="">
+        <div>
+          <label for="">Введите логин:</label>
+          <input
+            type="text"
+            id="name"
+            name="user-name"
+            placeholder="Введите логин"
+          />
         </div>
         <div>
-            <object type="img/logo.svg.png" data="SvgImg.svg" width="150" height="150">
-                <img src="img/logo.svg.png" width="150" height="150" alt="logo" />
-            </object>
+          <label for="">Введите пароль:</label>
+          <input
+            type="text"
+            id="password"
+            name="user-password"
+            placeholder="Введите пароль"
+          />
         </div>
-    </header>
-</body>
+        <div>
+          <button class="container__button">Вход</button>
+          <button class="container__button">Восстановить пароль</button>
+        </div>
+        <div>
+          <button class="container__button">
+            <a href="registraition.html">Регистрация</a>
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <h1>Описание игры</h1>
+    <div>
+      <img src="img/Weather-pic.jpg" alt="mainGame" width="300" />
+    </div>
+    <p class="discribe">
+      CosmoStart - космическая MMORPG. С первых минут игрового процесса
+      предлагается окунуться в мир бесконечного космического пространства. Он
+      затягивает: оригинальное звуковое сопровождение, понятный интерфейс,
+      возможность проводить время с другими игроманами в режиме онлайн.
+      <br />Большое количество персонажей, заданий, не даст заскучать – здесь
+      всегда есть чем заняться, при желании, можно самостоятельно создавать
+      оружие для своего корабля. Крафт добавляет достоинств Звездным Призракам.
+      <br />Для большей реалистичности, предусмотрена полноценная рыночная
+      система, в которой разрешается продавать абсолютно все, в том числе оружие
+      – никаких ограничений нет. При достижении пятого уровня, нужно быть
+      готовым встретить космическую вселенную во всей ее жестокости, когда
+      каждый пролетающий мимо корабль может напасть с целью захвата. (Описание
+      для игры взято из интрнета)
+    </p>
+
+    <footer>
+      <div class="flex-container">
+        <div class="flex-container__item">
+            <img src="img/launcher-2028032_960_720.png" alt="Космический корабль" width="250">
+        </div>
+        <div class="flex-container__item">
+            <img src="img/sign-2881876_960_720.png" alt="Предупреждение: Возможно похищение инопланетян" width="250">
+        </div>
+        <div class="flex-container__item">
+            <img src="img/maxresdefault.jpg" alt="Нападение на землю" width="250">
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
